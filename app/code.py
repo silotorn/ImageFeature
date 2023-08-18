@@ -4,7 +4,7 @@ import numpy as np
 # img_gray = cv2.imread(r'C:\2052\ImageFeature\Cars Dataset\test\Audi\23.jpg', 0)
 
 def gethog(img):
-    s= (256,256)
+    s= (128,128)
     new_img = cv2.resize(img,s,interpolation=cv2.INTER_AREA)
 
     win_size = new_img.shape
